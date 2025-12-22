@@ -1,8 +1,11 @@
-# PKI Home Lab Writeup
+# Public Key Infrastructure Lab Writeup
 
-## Overview
+<div align=center>
 
-This repository documents my journey through building a comprehensive Public Key Infrastructure (PKI) home lab. The lab explores various aspects of PKI implementation, from traditional Microsoft Active Directory Certificate Services to open-source solutions like EJBCA, and includes hands-on experience with cryptographic tools and hardware security modules.
+![Image](./assets/PKI-CLM-Lab.jpg)
+</div>
+
+This repository documents my journey through building a comprehensive Public Key Infrastructure (PKI) home lab. The lab explores various aspects of PKI implementation, from traditional Microsoft Active Directory Certificate Services to open-source solutions like EJBCA, and includes hands-on experience with cryptographic tools and hardware security modules
 
 ## Lab Components
 
@@ -13,29 +16,53 @@ This repository documents my journey through building a comprehensive Public Key
   - Subordinate Certificate Authority
 - **Certificate Issuance**: Microsoft IIS Server Client TLS Certificate via AD Certificate Services
 
-### 2. OpenSSL Study Environment
-- **Platform**: Ubuntu VM dedicated to cryptographic tool exploration
-- **Key Management**:
-  - Generated public/private key pairs (RSA, ECDSA)
-  - Created digital certificates
-  - Generated Certificate Signing Requests (CSRs)
-- **PKI Components**: Certificate Revocation Lists (CRLs), Online Certificate Status Protocol (OCSP)
+### 2. Linux CA
+- **OpenSSL Environment**: Ubuntu VM for cryptographic exploration
+  - RSA and ECDSA key pair generation
+  - Digital certificate and CSR creation
+  - CRL and OCSP implementation
+- **EJBCA Docker Deployment**: Root and Subordinate CA configuration
+  - Client and Server TLS certificate issuance
+  - Crypto token creation and management
 
-### 3. EJBCA Docker Deployment
-- **Installation**: EJBCA deployed via Docker on Ubuntu VM
-- **CA Hierarchy**: Root CA and Subordinate CA configuration
-- **Certificate Services**: Client and Server TLS certificate issuance
-- **Security Features**: Crypto token creation and management
-
-### 4. Advanced PKI Tools Research
+### 3. Advanced PKI Tools Research
 - **HashiCorp Vault**: Secret management and PKI backend exploration
 - **Hardware Security Modules (HSMs)**: Study of dedicated cryptographic hardware
 - **Cloud HSM Solutions**: Amazon AWS CloudHSM analysis
 - **Enterprise HSMs**: Thales Luna HSM investigation
 
+## CA Implementation Tasks
+
+### Microsoft Active Directory Certificate Services
+- Deployed infrastructure: 2 Domain Controllers and 2 Domain Joined Workstations
+- Established Root Certificate Authority (CA)
+- Configured Subordinate Certificate Authority
+- Issued Microsoft IIS Server Client TLS Certificate
+
+### Linux Certificate Authorities
+
+#### OpenSSL
+- Generated public/private key pairs (RSA, ECDSA)
+- Created digital certificates
+- Generated Certificate Signing Requests (CSRs)
+- Produced Certificate Revocation Lists (CRLs)
+- Implemented Online Certificate Status Protocol (OCSP)
+
+#### EJBCA
+- Deployed EJBCA via Docker on Ubuntu VM
+- Configured Root CA and Subordinate CA hierarchy
+- Issued Client and Server TLS certificates
+- Created and managed Crypto Tokens
+
+### Advanced PKI Research
+- Explored HashiCorp Vault for secret management and PKI backends
+- Studied Hardware Security Modules (HSMs)
+- Analyzed Amazon AWS CloudHSM solutions
+- Investigated Thales Luna enterprise HSMs
+
 ## Objectives
 
-This lab serves as a practical learning platform for:
+This writeup serves as a practical learning platform for:
 - Understanding PKI fundamentals and architecture
 - Implementing certificate authorities and hierarchies
 - Hands-on experience with certificate lifecycle management
@@ -47,10 +74,8 @@ This lab serves as a practical learning platform for:
 - **Microsoft Active Directory Certificate Services**
 - **OpenSSL**
 - **EJBCA (Enterprise Java Bean Certificate Authority)**
-- **Docker containerization**
-- **HashiCorp Vault**
 - **Hardware Security Modules (HSMs)**
-- **Cloud-based security services**
+
 
 ## Getting Started
 
@@ -93,8 +118,8 @@ This is a personal learning project, but feel free to:
 
 ## License
 
-This project is for educational purposes. Please refer to individual tool licenses for any code or configurations included.
+This project is for educational purposes. Please refer to individual tool licenses for any code or configurations included
 
 ## Disclaimer
 
-This lab is intended for educational and research purposes only. Ensure compliance with applicable laws and regulations when implementing PKI in production environments.
+This lab is intended for educational and research purposes only. Ensure compliance with applicable laws and regulations when implementing PKI in production environments
