@@ -1,11 +1,28 @@
-# Public Key Infrastructure Lab Writeup
+# Public Key Infrastructure Lab
+This repository documents my journey through building a comprehensive Public Key Infrastructure (PKI) home lab. The lab explores various aspects of PKI implementation, from traditional Microsoft Active Directory Certificate Services to open-source solutions like EJBCA, and includes hands-on experience with cryptographic tools and hardware security modules
+
+<div align=center>
+
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![OpenSSL](https://img.shields.io/badge/OpenSSL-721412?style=for-the-badge&logo=openssl&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active%20Directory-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![EJBCA](https://img.shields.io/badge/EJBCA-007DBA?style=for-the-badge&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+
+</div>
 
 <div align=center>
 
 ![Image](./assets/PKI-CLM-Lab.jpg)
+
 </div>
 
-This repository documents my journey through building a comprehensive Public Key Infrastructure (PKI) home lab. The lab explores various aspects of PKI implementation, from traditional Microsoft Active Directory Certificate Services to open-source solutions like EJBCA, and includes hands-on experience with cryptographic tools and hardware security modules
+
+## Disclaimer
+
+This lab is intended for educational and research purposes only. Ensure compliance with applicable laws and regulations when implementing PKI in production environments
 
 ## Lab Components
 
@@ -25,41 +42,6 @@ This repository documents my journey through building a comprehensive Public Key
   - Client and Server TLS certificate issuance
   - Crypto token creation and management
 
-### 3. Advanced PKI Tools Research
-- **HashiCorp Vault**: Secret management and PKI backend exploration
-- **Hardware Security Modules (HSMs)**: Study of dedicated cryptographic hardware
-- **Cloud HSM Solutions**: Amazon AWS CloudHSM analysis
-- **Enterprise HSMs**: Thales Luna HSM investigation
-
-## CA Implementation Tasks
-
-### Microsoft Active Directory Certificate Services
-- Deployed infrastructure: 2 Domain Controllers and 2 Domain Joined Workstations
-- Established Root Certificate Authority (CA)
-- Configured Subordinate Certificate Authority
-- Issued Microsoft IIS Server Client TLS Certificate
-
-### Linux Certificate Authorities
-
-#### OpenSSL
-- Generated public/private key pairs (RSA, ECDSA)
-- Created digital certificates
-- Generated Certificate Signing Requests (CSRs)
-- Produced Certificate Revocation Lists (CRLs)
-- Implemented Online Certificate Status Protocol (OCSP)
-
-#### EJBCA
-- Deployed EJBCA via Docker on Ubuntu VM
-- Configured Root CA and Subordinate CA hierarchy
-- Issued Client and Server TLS certificates
-- Created and managed Crypto Tokens
-
-### Advanced PKI Research
-- Explored HashiCorp Vault for secret management and PKI backends
-- Studied Hardware Security Modules (HSMs)
-- Analyzed Amazon AWS CloudHSM solutions
-- Investigated Thales Luna enterprise HSMs
-
 ## Objectives
 
 This writeup serves as a practical learning platform for:
@@ -69,37 +51,12 @@ This writeup serves as a practical learning platform for:
 - Exploring various PKI tools and technologies
 - Comparing traditional vs. modern PKI solutions
 
-## Technologies Covered
-
-- **Microsoft Active Directory Certificate Services**
-- **OpenSSL**
-- **EJBCA (Enterprise Java Bean Certificate Authority)**
-- **Hardware Security Modules (HSMs)**
-
 
 ## Getting Started
 
-### Prerequisites
-- Virtualization platform (VMware, VirtualBox, Hyper-V)
-- Basic understanding of networking and system administration
-- Familiarity with Linux command line
-
-### Lab Setup
-1. Deploy Microsoft Active Directory environment
-2. Configure Domain Controllers and join workstations
-3. Set up Certificate Authorities in AD CS
-4. Deploy Ubuntu VM for OpenSSL experimentation
-5. Install EJBCA via Docker
-6. Explore additional PKI tools as needed
-
-## Key Learnings
-
-- Certificate Authority hierarchy design and implementation
-- Public Key Infrastructure best practices
-- Cryptographic key generation and management
-- Certificate lifecycle (issuance, renewal, revocation)
-- Integration of PKI with enterprise environments
-- Comparison of commercial vs. open-source PKI solutions
+Please refer to the documentation files for detailed setup and implementation guides:
+- **Windows PKI Setup**: See [PKI on Windows](./PKI%20on%20Windows%20using%20ADCS.md) for Microsoft Active Directory Certificate Services configuration
+- **Linux PKI Setup**: See [PKI on Linux](./PKI%20on%20Linux%20using%20EJBCA.md) for OpenSSL and EJBCA deployment instructions
 
 ## Future Enhancements
 
@@ -119,7 +76,3 @@ This is a personal learning project, but feel free to:
 ## License
 
 This project is for educational purposes. Please refer to individual tool licenses for any code or configurations included
-
-## Disclaimer
-
-This lab is intended for educational and research purposes only. Ensure compliance with applicable laws and regulations when implementing PKI in production environments
