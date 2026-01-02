@@ -1,4 +1,4 @@
-### Microsoft Active Directory Certificate Services
+# Microsoft Active Directory Certificate Services
 
 A complete walkthrough for setting up a two-machine Active Directory and Certificate Services lab environment using Windows Server 2025 Evaluation Edition and VirtualBox.
 
@@ -71,7 +71,6 @@ Repeat Step 2 with these changes:
 - **CPU**: 2 cores (minimum)
 - Keep the same **LAB-Network** attachment
 
----
 
 ## Primary Domain Controller Setup
 
@@ -156,8 +155,6 @@ Repeat Step 2 with these changes:
    - Expand **Forward Lookup Zones**
    - You should see `node.home` zone
 
----
-
 ## Certificate Services Setup
 
 ### Step 1: Install Active Directory Certificate Services
@@ -234,7 +231,6 @@ Repeat Step 2 with these changes:
 3. Right-click the CA and select **Properties**
 4. Verify the certificate is installed with correct validity period
 
----
 
 ## Second Machine Setup
 
@@ -288,8 +284,6 @@ After restart:
 3. Go to **Tools** → **Active Directory Users and Computers**
 4. Navigate to **node.home** → **Computers**
 5. You should see both `DC01` and `SRV01` listed
-
----
 
 ## Post-Configuration Tasks
 
@@ -375,7 +369,6 @@ For a more realistic environment:
 5. Complete the installation
 6. Create shared folders for testing group policy and file permissions
 
----
 
 ## Useful Commands and Tools
 
@@ -415,7 +408,6 @@ Press `Windows+R`, type `mmc`, and add these snap-ins:
 - **Services** (`services.msc`)
 - **Device Manager** (`devmgmt.msc`)
 
----
 
 ## Troubleshooting
 
@@ -452,7 +444,6 @@ Press `Windows+R`, type `mmc`, and add these snap-ins:
 3. Try rebooting the VM
 4. Disable IPv6 if issues persist
 
----
 
 ## Next Steps
 
@@ -474,7 +465,6 @@ Press `Windows+R`, type `mmc`, and add these snap-ins:
 - **Updates**: Apply Windows updates periodically
 - **Documentation**: Keep detailed notes of your configuration
 
----
 
 ## Security Best Practices
 
@@ -487,7 +477,6 @@ Press `Windows+R`, type `mmc`, and add these snap-ins:
 7. **Test disaster recovery** procedures
 8. **Monitor CA logs** for unauthorized activity
 
----
 
 ## Reference URLs
 
@@ -496,7 +485,6 @@ Press `Windows+R`, type `mmc`, and add these snap-ins:
 - [VirtualBox Manual](https://www.virtualbox.org/manual/)
 - [Microsoft PKI Deployment Guide](https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/plan-and-design-your-pki-infrastructure)
 
----
 
 ## Lab Configuration Summary
 
@@ -512,8 +500,3 @@ Press `Windows+R`, type `mmc`, and add these snap-ins:
 | **CA Type** | Enterprise Root CA |
 | **CA Name** | NODE-ROOT-CA |
 | **CA Validity** | 5 years |
-
----
-
-**Last Updated**: January 2026
-**Compatibility**: Windows Server 2025, VirtualBox 7.0+

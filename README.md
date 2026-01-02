@@ -19,10 +19,16 @@ This repository documents my journey through building a comprehensive Public Key
 
 </div>
 
+> This lab is intended for educational and research purposes only. Ensure compliance with applicable laws and regulations when implementing PKI in production environments
 
-## Disclaimer
+## Objectives
 
-This lab is intended for educational and research purposes only. Ensure compliance with applicable laws and regulations when implementing PKI in production environments
+This writeup serves as a practical learning platform for:
+- Understanding PKI fundamentals and architecture
+- Implementing certificate authorities and hierarchies
+- Hands-on experience with certificate lifecycle management
+- Exploring various PKI tools and technologies
+- Comparing traditional vs. modern PKI solutions
 
 ## Lab Components
 
@@ -38,18 +44,9 @@ This lab is intended for educational and research purposes only. Ensure complian
   - RSA and ECDSA key pair generation
   - Digital certificate and CSR creation
   - CRL and OCSP implementation
-- **EJBCA Docker Deployment**: Root and Subordinate CA configuration
+- **EJBCA Docker Deployment**: Centralized Root and Subordinate CA configuration Management
   - Client and Server TLS certificate issuance
   - Crypto token creation and management
-
-## Objectives
-
-This writeup serves as a practical learning platform for:
-- Understanding PKI fundamentals and architecture
-- Implementing certificate authorities and hierarchies
-- Hands-on experience with certificate lifecycle management
-- Exploring various PKI tools and technologies
-- Comparing traditional vs. modern PKI solutions
 
 
 ## Getting Started

@@ -1,10 +1,8 @@
 # Linux Certificate Authorities
 
-## Overview
-
 This section documents comprehensive hands-on experience with OpenSSL and EJBCA, exploring cryptographic fundamentals and enterprise-grade certificate authority solutions on Linux.
 
----
+
 
 ## Part 1: OpenSSL - Cryptographic Foundation
 
@@ -262,7 +260,6 @@ python3 -m http.server 443 --certfile tls_combined.pem
 curl --cacert tls_cert.pem https://localhost
 ```
 
----
 
 ## Part 2: EJBCA - Enterprise Certificate Authority
 
@@ -378,7 +375,6 @@ docker logs -f ejbca
 # RA Portal: https://localhost:8443/ejbca/ra/
 ```
 
----
 
 ## Certificate Authority Configuration in EJBCA
 
@@ -539,8 +535,6 @@ Navigate to **RA Functions → End Entity Profiles**:
    - **Available Tokens**: PKCS#12, PEM
 6. Save
 
----
-
 ## Issuing Certificates
 
 ### Issue Client Certificate
@@ -623,7 +617,6 @@ server {
 }
 ```
 
----
 
 ## Advanced EJBCA Operations
 
@@ -675,7 +668,6 @@ docker cp ejbca_backup.sql ejbca-database:/
 docker exec ejbca-database mysql -u ejbca -pejbca ejbca < /ejbca_backup.sql
 ```
 
----
 
 ## Practical Experiments and Workflows
 
@@ -719,7 +711,6 @@ docker exec ejbca-database mysql -u ejbca -pejbca ejbca < /ejbca_backup.sql
 4. **SCEP enrollment**: Test Simple Certificate Enrollment Protocol
 5. **EST enrollment**: Test Enrollment over Secure Transport
 
----
 
 ## Troubleshooting and Useful Commands
 
@@ -771,8 +762,6 @@ openssl pkcs12 -in client.p12 -noout -info -passin pass:password
 | Certificate enrollment fails | Verify End Entity Profile settings and CA is online |
 | OCSP responder not responding | Ensure OCSP signing cert exists and CA allows it |
 | CRL download returns 404 | Verify CRL distribution points in CA settings |
-
----
 
 ## References
 
