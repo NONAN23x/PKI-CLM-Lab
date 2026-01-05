@@ -21,14 +21,12 @@ This repository documents my journey through building a comprehensive Public Key
 
 > This lab is intended for educational and research purposes only. Ensure compliance with applicable laws and regulations when implementing PKI in production environments
 
-## Objectives
 
-This writeup serves as a practical learning platform for:
-- Understanding PKI fundamentals and architecture
-- Implementing certificate authorities and hierarchies
-- Hands-on experience with certificate lifecycle management
-- Exploring various PKI tools and technologies
-- Comparing traditional vs. modern PKI solutions
+## Getting Started
+
+Please refer to the documentation files for detailed setup and implementation guides:
+- **Windows PKI Setup**: See [PKI on Windows](./PKI%20on%20Windows%20using%20ADCS.md) for Microsoft Active Directory Certificate Services configuration
+- **Linux PKI Setup**: See [PKI on Linux](./PKI%20on%20Linux%20using%20EJBCA.md) for OpenSSL and EJBCA deployment instructions
 
 ## Lab Components
 
@@ -47,13 +45,6 @@ This writeup serves as a practical learning platform for:
 - **EJBCA Docker Deployment**: Centralized Root and Subordinate CA configuration Management
   - Client and Server TLS certificate issuance
   - Crypto token creation and management
-
-
-## Getting Started
-
-Please refer to the documentation files for detailed setup and implementation guides:
-- **Windows PKI Setup**: See [PKI on Windows](./PKI%20on%20Windows%20using%20ADCS.md) for Microsoft Active Directory Certificate Services configuration
-- **Linux PKI Setup**: See [PKI on Linux](./PKI%20on%20Linux%20using%20EJBCA.md) for OpenSSL and EJBCA deployment instructions
 
 ## Future Enhancements
 
