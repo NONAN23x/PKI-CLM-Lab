@@ -1,5 +1,5 @@
 # Public Key Infrastructure Lab
-This repository documents my journey through building a comprehensive Public Key Infrastructure (PKI) home lab. The lab explores various aspects of PKI implementation, from traditional Microsoft Active Directory Certificate Services to open-source solutions like EJBCA, and includes hands-on experience with cryptographic tools and hardware security modules
+This repository documents my journey through building a comprehensive Public Key Infrastructure (PKI) home lab. The lab explores various aspects of PKI implementation, from traditional Microsoft Active Directory Certificate Services to open-source solutions like [EJBCA](https://www.ejbca.org/), and includes hands-on experience with cryptographic tools and hardware security modules
 
 <div align=center>
 
@@ -25,8 +25,8 @@ This repository documents my journey through building a comprehensive Public Key
 ## Getting Started
 
 Please refer to the documentation files for detailed setup and implementation guides:
-- **Windows PKI Setup**: See [PKI on Windows](./PKI%20on%20Windows%20using%20ADCS.md) for Microsoft Active Directory Certificate Services configuration
-- **Linux PKI Setup**: See [PKI on Linux](./PKI%20on%20Linux%20using%20EJBCA.md) for OpenSSL and EJBCA deployment instructions
+- **Windows PKI Setup**: See [PKI on Windows Using ADCS.md](./PKI%20on%20Windows%20using%20ADCS.md) for Microsoft Active Directory Certificate Services configuration
+- **Linux PKI Setup**: See [PKI on Linux Uing EJBCA.md](./PKI%20on%20Linux%20using%20EJBCA.md) for OpenSSL and [EJBCA](https://www.ejbca.org/) deployment instructions
 
 ## Lab Components
 
