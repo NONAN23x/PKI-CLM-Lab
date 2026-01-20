@@ -2,6 +2,48 @@
 
 This section documents comprehensive hands-on experience with OpenSSL and EJBCA, exploring cryptographic fundamentals and enterprise-grade certificate authority solutions on Linux.
 
+## Table of Contents
+
+*   [Part 1: OpenSSL - Cryptographic Foundation](#part-1-openssl---cryptographic-foundation)
+    *   [Objectives](#objectives)
+    *   [Environment Setup](#environment-setup)
+    *   [Key Generation](#key-generation)
+    *   [Certificate Creation](#certificate-creation)
+    *   [Certificate Chain and Verification](#certificate-chain-and-verification)
+    *   [Certificate Revocation Lists (CRL)](#certificate-revocation-lists-crl)
+    *   [Online Certificate Status Protocol (OCSP)](#online-certificate-status-protocol-ocsp)
+    *   [Practical Exercises](#practical-exercises)
+*   [Part 2: EJBCA - Enterprise Certificate Authority](#part-2-ejbca---enterprise-certificate-authority)
+    *   [Overview](#overview)
+    *   [Installation and Setup](#installation-and-setup)
+    *   [Production-Like Environment Setup](#production-like-environment-setup)
+*   [Certificate Authority Configuration in EJBCA](#certificate-authority-configuration-in-ejbca)
+    *   [Step 1: Create Certificate Profiles](#step-1-create-certificate-profiles)
+    *   [Step 2: Create Crypto Tokens](#step-2-create-crypto-tokens)
+    *   [Step 3: Create Certificate Authorities](#step-3-create-certificate-authorities)
+    *   [Step 4: Create End Entity Profiles](#step-4-create-end-entity-profiles)
+*   [Issuing Certificates](#issuing-certificates)
+    *   [Issue Client Certificate](#issue-client-certificate)
+    *   [Issue Server Certificate](#issue-server-certificate)
+*   [Advanced EJBCA Operations](#advanced-ejbca-operations)
+    *   [Configure OCSP Responder](#configure-ocsp-responder)
+    *   [Configure CRL Distribution](#configure-crl-distribution)
+    *   [Export CA Certificate Chain](#export-ca-certificate-chain)
+    *   [Backup and Recovery](#backup-and-recovery)
+*   [Practical Experiments and Workflows](#practical-experiments-and-workflows)
+    *   [Experiment 1: Multi-Tier CA Hierarchy](#experiment-1-multi-tier-ca-hierarchy)
+    *   [Experiment 2: Certificate Lifecycle Management](#experiment-2-certificate-lifecycle-management)
+    *   [Experiment 3: Key Rotation](#experiment-3-key-rotation)
+    *   [Experiment 4: Certificate Enrollment Workflows](#experiment-4-certificate-enrollment-workflows)
+*   [Troubleshooting and Useful Commands](#troubleshooting-and-useful-commands)
+    *   [EJBCA Logs](#ejbca-logs)
+    *   [Database Queries](#database-queries)
+    *   [Certificate Verification](#certificate-verification)
+    *   [Common Issues and Solutions](#common-issues-and-solutions)
+*   [References](#references)
+
+
+
 
 
 ## Part 1: OpenSSL - Cryptographic Foundation
